@@ -19,11 +19,11 @@ public class Main {
             int val = input.nextInt();
 
             if( val == 1){
-                add(variable1, variable2);
+                result = add(variable1, variable2);
                 System.exit(0);
             }
             else if ( val == 2){
-                subtract(variable1, variable2);
+                result = subtract(variable1, variable2);
                 System.exit(0);
             }
             else if ( val == 0)
@@ -33,13 +33,15 @@ public class Main {
         }while(true);
     }
 
-    public static void add(int variable1, int variable2) {
+    public static int add(int variable1, int variable2) {
         int result = variable1 + variable2;
         System.out.println(variable1 + " + " + variable2 + " = " + result);
+        return result;
     }
 
-    public static void subtract(int variable1, int variable2) {
+    public static int subtract(int variable1, int variable2) {
         int result = variable1 - variable2;
         System.out.println(variable1 + " - " + variable2 + " = " + result);
+        return result;
     }
 }
