@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+            int hejhej;
             int variable1;
             int variable2;
             int result;
